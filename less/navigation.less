@@ -1,12 +1,18 @@
 // Navigation code here
 nav {
   width: 100%;
-  background-color: @nav-bg;
+  background-color: rgba(246, 246, 246, 0.9);
+  z-index: 1;
+  position: fixed;
 
   .nav {
     width: 800px;
     margin: 0 auto;
     .flex-nav2;
+
+    @media @phone {
+      width: 80%;
+    }
 
     h1 {
       font-size: 3rem;
@@ -14,15 +20,15 @@ nav {
     }
 
     .navigation {
-      width: 60%;
+      width: 100%;
       .flex-nav;
       padding: 10px 0;
 
-      a {
-        text-decoration: none;
-        color: black;
-        font-size: 1.4rem;
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.4rem;
+        }
       }
     }
-  }
 }
