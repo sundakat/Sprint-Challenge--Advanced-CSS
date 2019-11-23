@@ -162,7 +162,9 @@ p {
 }
 nav {
   width: 100%;
-  background-color: #F6F6F6;
+  background-color: rgba(246, 246, 246, 0.9);
+  z-index: 1;
+  position: fixed;
 }
 nav .nav {
   width: 800px;
@@ -172,12 +174,17 @@ nav .nav {
   align-items: center;
   justify-content: center;
 }
+@media only screen and (max-width:500px) {
+  nav .nav {
+    width: 80%;
+  }
+}
 nav .nav h1 {
   font-size: 3rem;
   margin: 20px 0;
 }
 nav .nav .navigation {
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
   padding: 10px 0;
@@ -198,7 +205,8 @@ footer {
   align-items: center;
 }
 .home .intro img {
-  border-radius: 5px;
+  border-radius: 5px 5px;
+  padding-top: 105px;
 }
 @media only screen and (max-width:500px) {
   .home .intro img {
